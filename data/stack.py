@@ -17,7 +17,7 @@ class Stack:
         except IndexError:
             print("Stack is empty")
 
-    def __len__(self): #len()로 호출하면 stack의 item 수 반환
+    def len_stack(self): #len()로 호출하면 stack의 item 수 반환
         return len(self.items)
 
     def isEmpty(self):
