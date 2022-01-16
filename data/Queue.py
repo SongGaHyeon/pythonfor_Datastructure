@@ -22,7 +22,7 @@ class Queue:
             print("Queue is empty")
         else:
             return len(self.items)-self.front_index
-        # 큐가 비어있으면 문구 출력, 아니면 길이 return 
+        # 큐가 비어있으면 문구 출력, 아니면 길이 return
 
     def front(self): #가장 왼쪽 저장된 값을 삭제하지 않고 리턴
         return self.items[self.front_index]

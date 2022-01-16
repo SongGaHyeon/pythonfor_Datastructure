@@ -59,6 +59,8 @@ def infix_to_postfix(prob, opStack, outStack): #매개변수 3개를 우선 받�
     while(opStack.len_stack()!=0): #opStack에 값이 없는 것이 아니면 반복
         outStack.append(opStack.top())  #후위 연산에 opStack에 있는 맨 위의 것을 넣기
         opStack.pop()# 이 while문은 공부가 조금 필요할듯
+#     opStack에 있는 연산자를 outStack으로 옮기는 과정
+#outStack.append(opStack.top()) 한줄로 바꾸는 과정
 
 def compute_postfix(outStack):
     temp=Stack()
