@@ -3,13 +3,13 @@ sys.setrecursionlimit(10 ** 5)
 
 
 # dfs 탐색
-def dfs(x, l):
+def dfs(x, l): #여기서 visited 리스트와 level 리스트에 x번째 접근
     visited[x] = True
     level[x] = l
 
-    # 현재 노드와 연결되오 있는 노드 확인
+    # 현재 노드와 연결되어 있는 노드 확인
     for i in tree[x]:
-
+#탐색하지 않은 노드를 위한 코드
         # 탐색하지 않은 노드라면 재귀적으로 탐색
         if not visited[i]:
             parent[i] = x # 부모 노드로 초기화
